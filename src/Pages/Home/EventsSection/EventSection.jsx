@@ -14,7 +14,7 @@ const EventSection = () => {
         </div>
         {/* Event Items */}
         <div className="md:flex justify-center gap-4 items-center">
-          <div className="max-w-[560px] p-5 md:p-10">
+          <div className="max-w-[560px] p-5 md:p-10 mx-auto">
             <img
               className="rounded custom-shadow my-8"
               src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2020/01/hiking-v1.jpg"
@@ -33,7 +33,7 @@ const EventSection = () => {
               </button>
             </div>
           </div>
-          <div className="max-w-[560px] p-5 md:p-10">
+          <div className="max-w-[560px] p-5 md:p-10 mx-auto">
             <img
               className="rounded custom-shadow my-8"
               src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2020/01/walking-v1.jpg"
