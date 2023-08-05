@@ -4,11 +4,12 @@ import { TbFidgetSpinner } from "react-icons/tb";
 import { toast } from "react-hot-toast";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Container from "../../Components/Shared/Container/Container";
-import img from '../../assets/images/login.jpg'
+import img from "../../assets/images/login.jpg";
 import SocialLogin from "../../Components/Shared/SocialLogin/SocialLogin";
 
 const SignUp = () => {
-	const { loading, setLoading, createUser, updateUserProfile } = useContext(AuthContext);
+	const { loading, setLoading, createUser, updateUserProfile } =
+		useContext(AuthContext);
 	const navigate = useNavigate();
 	const location = useLocation();
 	const from = location.state?.from?.pathname || "/";
@@ -24,7 +25,10 @@ const SignUp = () => {
 		const image = form.image.files[0];
 		const formData = new FormData();
 		formData.append("image", image);
-		const url = `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMGBB_API}`;
+		const url = `https://api.imgbb.com/1/upload?key=${
+			import.meta.env.VITE_IMGBB_API
+		}`;
+		console.log(url);
 		fetch(url, {
 			method: "POST",
 			body: formData,
@@ -59,23 +63,44 @@ const SignUp = () => {
 				console.log(err.message);
 				toast.error(err.message);
 			});
+		fetch("http://localhost:5000/user", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				name: name,
+				email: email,
+				image: url,
+			}),
+		});
 		return;
 	};
 
 	return (
 		<Container>
 			<div className="grid md:grid-cols-2 justify-center items-center mt-[50px]">
-            <img className="w-[80%]" src={img} alt="" />
+				<img className="w-[80%]" src={img} alt="" />
 				<div className="flex justify-center items-center min-h-screen mt-[50px] md:mt-0">
 					<div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900">
 						<div className="mb-8 text-center">
 							<h1 className="my-3 text-4xl font-bold">Sign Up</h1>
-							<p className="text-sm text-gray-400">Welcome to AirCNC</p>
+							<p className="text-sm text-gray-400">
+								Welcome to AirCNC
+							</p>
 						</div>
-						<form onSubmit={handleSubmit} noValidate="" action="" className="space-y-6">
+						<form
+							onSubmit={handleSubmit}
+							noValidate=""
+							action=""
+							className="space-y-6"
+						>
 							<div className="space-y-4">
 								<div>
-									<label htmlFor="email" className="block mb-2 text-sm">
+									<label
+										htmlFor="email"
+										className="block mb-2 text-sm"
+									>
 										Name
 									</label>
 									<input
@@ -88,7 +113,10 @@ const SignUp = () => {
 									/>
 								</div>
 								<div>
-									<label htmlFor="image" className="block mb-2 text-sm">
+									<label
+										htmlFor="image"
+										className="block mb-2 text-sm"
+									>
 										Select Image:
 									</label>
 									<input
@@ -100,7 +128,10 @@ const SignUp = () => {
 									/>
 								</div>
 								<div>
-									<label htmlFor="email" className="block mb-2 text-sm">
+									<label
+										htmlFor="email"
+										className="block mb-2 text-sm"
+									>
 										Email address
 									</label>
 									<input
@@ -115,7 +146,10 @@ const SignUp = () => {
 								</div>
 								<div>
 									<div className="flex justify-between">
-										<label htmlFor="password" className="text-sm mb-2">
+										<label
+											htmlFor="password"
+											className="text-sm mb-2"
+										>
 											Password
 										</label>
 									</div>
