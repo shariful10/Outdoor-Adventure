@@ -48,7 +48,7 @@ const Login = () => {
 
 	return (
 		<Container>
-			<div className="grid grid-cols-2 justify-center items-center">
+			<div className="grid md:grid-cols-2 justify-center items-center mt-[50px]">
 				<img className="w-[80%]" src={img} alt="" />
 				<div className="flex justify-center items-center min-h-screen">
 					<div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900">

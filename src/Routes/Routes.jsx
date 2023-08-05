@@ -4,7 +4,8 @@ import AllSection from "../Pages/Home/AllSection/AllSection";
 import Projects from "../Pages/Projects/Projects";
 import Login from "../Pages/Login/Login";
 import About from "../Pages/About/About";
-import Contact from "../Pages/Contact/Contact";
+import SignUp from "../Pages/SignUp/SignUp";
+import Contact from './../Pages/Contact/Contact';
 
 export const router = createBrowserRouter([
 	{
@@ -20,10 +21,6 @@ export const router = createBrowserRouter([
 				element: <About></About>,
 			},
 			{
-				path: "/login",
-				element: <Login />,
-			},
-			{
 				path: "/projects",
 				element: <Projects />,
 			},
@@ -33,4 +30,12 @@ export const router = createBrowserRouter([
 			},
 		],
 	},
+    {
+        path: "/login",
+        element: <Login />,
+    },
+    {
+        path: "/signup",
+        element: <SignUp />,
+    },
 ]);
