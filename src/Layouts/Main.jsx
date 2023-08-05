@@ -7,11 +7,11 @@ import { Outlet } from "react-router-dom";
 const Main = () => {
 	return (
 		<div className="">
-			<Navbar />
 			<Container>
+				<Navbar />
 				<Outlet />
+				<Footer />
 			</Container>
-			<Footer />
 		</div>
 	);
 };
