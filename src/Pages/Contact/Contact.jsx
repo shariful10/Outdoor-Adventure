@@ -7,13 +7,11 @@ const Contact = () => {
 	const {
 		register,
 		handleSubmit,
-		watch,
 		formState: { errors },
 	} = useForm();
 
 	const onSubmit = (data) => console.log(data);
 
-	console.log(watch("example"));
 	return (
 		<div className="">
 			<SectionHeader
@@ -47,7 +45,7 @@ const Contact = () => {
 						<input
 							className="px-4 py-10 border w-full border-gray-500 "
 							placeholder="Message"
-							{...register("exampleRequired", { required: true })}
+							{...register("message", { required: true })}
 						/>
 						{/* errors will return when field validation fails  */}
 						{errors.message && <span>Message is required</span>}
@@ -74,7 +72,7 @@ const Contact = () => {
 						</p>
 					</div>
 					<div className="mb-2">
-						<h3 className="text-md font-semibold">Call Us​</h3>
+						<h3 className="text-md font-semibold">Call Us ​</h3>
 						<p className="text-base text-gray-500">800-123-456</p>
 					</div>
 					<div>
