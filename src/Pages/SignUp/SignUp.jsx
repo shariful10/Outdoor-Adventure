@@ -64,9 +64,9 @@ const SignUp = () => {
 
 	return (
 		<Container>
-			<div className="grid grid-cols-2 justify-center items-center">
+			<div className="grid md:grid-cols-2 justify-center items-center mt-[50px]">
             <img className="w-[80%]" src={img} alt="" />
-				<div className="flex justify-center items-center min-h-screen">
+				<div className="flex justify-center items-center min-h-screen mt-[50px] md:mt-0">
 					<div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900">
 						<div className="mb-8 text-center">
 							<h1 className="my-3 text-4xl font-bold">Sign Up</h1>
