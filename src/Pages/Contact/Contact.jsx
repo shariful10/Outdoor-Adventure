@@ -17,6 +17,7 @@ const Contact = () => {
 	return (
 		<div className="">
 			<SectionHeader
+				title={"Contact Us"}
 				bgImage={"https://i.ibb.co/z7cm0qN/about-bg-2.jpg"}
 			></SectionHeader>
 			<div className="lg:flex lg:justify-between items-center gap-10">
