@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-hot-toast";
-import { saveUser } from "../../API/auth";
-import useAuth from "../../Hooks/useAuth";
+import { AuthContext } from "../../../Providers/AuthProvider";
+// import useAuth from "../../Hooks/useAuth";
 
 const SocialLogin = () => {
-	const { loading, setLoading, signInWithGoogle } = useAuth();
+	const { loading, setLoading, signInWithGoogle } = useContext(AuthContext);
 	const navigate = useNavigate();
 	const location = useLocation();
 	const from = location.state?.from?.pathname || "/";
@@ -16,7 +16,7 @@ const SocialLogin = () => {
 			.then((res) => {
 				console.log(res.user);
 				toast.success("Successfully Login");
-				saveUser(res.user);
+				// saveUser(res.user);
 				navigate(from, { replace: true });
 			})
 			.catch((err) => {
