@@ -8,21 +8,33 @@ import { Pagination } from "swiper/modules";
 const Camping = () => {
     return (
         <div className="">
-      <div className="container mx-auto">
-        <div className="flex items-center gap-5 mt-10 mb-16 ">
+      <div className="container mx-auto text-center md:text-start">
+        <div className="flex flex-col md:flex-row items-center gap-5 mt-10 mb-16 ">
           <h5 className="text-xl font-bold">Forest Tours</h5>
           <p className="bg-rose-600 w-20 h-1">&nbsp;</p>
         </div>
-        <h2 className="text-5xl font-bold font-sans">Camping</h2>
+        <h2 className="text-4xl md:text-5xl font-bold font-sans">Camping</h2>
         <p className="text-xl text-gray-500 my-3">
           Interdum exercitation penatibus, praesentium facilisi accusamus
           fermentum, sagittis.
         </p>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={30}
           pagination={{
             clickable: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+              
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          
           }}
           loop={true}
           modules={[Pagination]}

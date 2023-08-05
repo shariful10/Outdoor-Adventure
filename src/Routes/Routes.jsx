@@ -3,7 +3,9 @@ import Main from "../Layouts/Main";
 import AllSection from "../Pages/Home/AllSection/AllSection";
 import Projects from "../Pages/Projects/Projects";
 import Login from "../Pages/Login/Login";
+import About from "../Pages/About/About";
 import SignUp from "../Pages/SignUp/SignUp";
+import Contact from './../Pages/Contact/Contact';
 
 export const router = createBrowserRouter([
 	{
@@ -15,17 +17,25 @@ export const router = createBrowserRouter([
 				element: <AllSection />,
 			},
 			{
+				path: "/about",
+				element: <About></About>,
+			},
+			{
 				path: "/projects",
 				element: <Projects />,
 			},
+			{
+				path: "/contact",
+				element: <Contact />,
+			},
 		],
 	},
-	{
-		path: "/login",
-		element: <Login />,
-	},
-	{
-		path: "/signup",
-		element: <SignUp />,
-	},
+    {
+        path: "/login",
+        element: <Login />,
+    },
+    {
+        path: "/signup",
+        element: <SignUp />,
+    },
 ]);
