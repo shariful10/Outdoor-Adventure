@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import SectionHeader from "../../Components/Shared/SectionHeader/SectionHeader";
 
 const Contact = () => {
 	const {
@@ -15,14 +16,9 @@ const Contact = () => {
 	console.log(watch("example"));
 	return (
 		<div className="">
-			<div className="mb-10">
-				<img src="https://i.ibb.co/z7cm0qN/about-bg-2.jpg" alt="" />
-				<div className="absolute w-full top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-shadow-md">
-					<h1 className="text-center text-black font-semibold text-5xl">
-						CONTACT US
-					</h1>
-				</div>
-			</div>
+			<SectionHeader
+				bgImage={"https://i.ibb.co/z7cm0qN/about-bg-2.jpg"}
+			></SectionHeader>
 			<div className="lg:flex lg:justify-between items-center gap-10">
 				<div className="lg:w-1/2 p-8 border-2 border-gray-700">
 					<h1 className="text-4xl mb-12">WE'RE READY, LET'S TALK.</h1>
