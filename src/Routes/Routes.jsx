@@ -5,37 +5,37 @@ import Projects from "../Pages/Projects/Projects";
 import Login from "../Pages/Login/Login";
 import About from "../Pages/About/About";
 import SignUp from "../Pages/SignUp/SignUp";
-import Contact from './../Pages/Contact/Contact';
+import Contact from "./../Pages/Contact/Contact";
 
 export const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Main />,
-		children: [
-			{
-				path: "/",
-				element: <AllSection />,
-			},
-			{
-				path: "/about",
-				element: <About></About>,
-			},
-			{
-				path: "/projects",
-				element: <Projects />,
-			},
-			{
-				path: "/contact",
-				element: <Contact />,
-			},
-		],
-	},
-    {
-        path: "/login",
-        element: <Login />,
-    },
-    {
-        path: "/signup",
-        element: <SignUp />,
-    },
+  {
+    path: "/",
+    element: <Main />,
+    children: [
+      {
+        path: "/",
+        element: <AllSection />,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
+  },
 ]);
