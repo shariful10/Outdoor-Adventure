@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { TbFidgetSpinner } from "react-icons/tb";
 import { toast } from "react-hot-toast";
 import { AuthContext } from "../../Providers/AuthProvider";
-import Container from "../../Components/Shared/Container/Container";
 import img from "../../assets/images/login.jpg";
 import SocialLogin from "../../Components/Shared/SocialLogin/SocialLogin";
 
@@ -78,8 +77,8 @@ const SignUp = () => {
 	};
 
 	return (
-		<Container>
-			<div className="grid md:grid-cols-2 justify-center items-center mt-[50px]">
+		<div className="max-w-7xl mx-auto">
+			<div className="grid md:grid-cols-2 justify-center items-center">
 				<img className="w-[80%]" src={img} alt="" />
 				<div className="flex justify-center items-center min-h-screen mt-[50px] md:mt-0">
 					<div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900">
@@ -197,7 +196,7 @@ const SignUp = () => {
 					</div>
 				</div>
 			</div>
-		</Container>
+		</div>
 	);
 };
 

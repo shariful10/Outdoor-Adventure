@@ -82,19 +82,19 @@ const Contact = () => {
 					<div className="lg:w-1/2 p-8 ">
 						<h1 className="text-4xl mb-12">CONTACT INFO</h1>
 						<div className="">
-							<h3 className="text-md font-semibold">Address​</h3>
+							<h3 className="text-md font-semibold">Address</h3>
 							<p className="text-base text-gray-500">
 								123 Fifth Avenue, NY 10160, New York, USA
 							</p>
 						</div>
 						<div className="my-2">
-							<h3 className="text-md font-semibold">Email Us​</h3>
+							<h3 className="text-md font-semibold">Email Us</h3>
 							<p className="text-base text-gray-500">
 								contact@example.com
 							</p>
 						</div>
 						<div className="mb-2">
-							<h3 className="text-md font-semibold">Call Us ​</h3>
+							<h3 className="text-md font-semibold">Call Us</h3>
 							<p className="text-base text-gray-500">
 								800-123-456
 							</p>
