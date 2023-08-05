@@ -7,7 +7,7 @@ import { Pagination } from 'swiper/modules';
 
 const WaterSports = () => {
   return (
-    <div className="container mx-auto text-center md:text-start">
+    <div className="container mx-auto text-center my-20 md:text-start">
       <div className="flex flex-col md:flex-row items-center gap-5 mt-10 mb-16 ">
         <h5 className="text-xl font-bold">Adventure</h5>
         <p className="bg-rose-600 w-20 h-1">&nbsp;</p>
