@@ -3,7 +3,7 @@ import Container from "../../../Components/Shared/Container/Container";
 
 const ReviewSection = () => {
   return (
-    <div className="bg-gray-100 py-16 text-center">
+    <section className="bg-gray-100 py-16 text-center">
       <Container>
         <div className="flex flex-col md:flex-row justify-around items-center">
           <img
@@ -20,7 +20,7 @@ const ReviewSection = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

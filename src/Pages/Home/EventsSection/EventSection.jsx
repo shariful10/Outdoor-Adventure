@@ -3,7 +3,7 @@ import Container from "../../../Components/Shared/Container/Container";
 
 const EventSection = () => {
   return (
-    <div className="text-center py-16">
+    <section className="text-center py-16">
       <Container>
         {/* Section Header */}
         <div>
@@ -54,7 +54,7 @@ const EventSection = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

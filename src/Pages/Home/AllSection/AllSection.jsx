@@ -3,6 +3,7 @@ import BannerSection from "../BannerSection/BannerSection";
 import ReviewSection from "../ReviewSection/ReviewSection";
 import EventSection from "../EventsSection/EventSection";
 import Explore from "../Explore/Explore";
+import Destination from "../Destination/Destination";
 
 const AllSection = () => {
   return (
@@ -11,6 +12,7 @@ const AllSection = () => {
       <ReviewSection />
       <EventSection />
       <Explore />
+      <Destination />
     </div>
   );
 };
