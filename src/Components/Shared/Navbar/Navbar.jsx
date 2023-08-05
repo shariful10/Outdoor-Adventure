@@ -26,41 +26,41 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
           >
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
-            <li>
-              <a>Services</a>
-            </li>
-            <li>
-              <Link to="/projects">Project</Link>
-            </li>
-            <li>
-              <a>Contact</a>
-            </li>
+          <li>
+          <Link className="text-xl font-bold text-white hover:bg-blue-600 hover:text-white" to="/">Home</Link>
+          </li>
+          <li>
+          <Link className="text-xl font-bold text-white hover:bg-blue-600 hover:text-white" to="/about">About</Link>
+          </li>
+          <li>
+          <Link className="text-xl font-bold text-white hover:bg-blue-600 hover:text-white" to="/services">Services</Link>
+          </li>
+          <li>
+            <Link className="text-xl font-bold text-white hover:bg-blue-600 hover:text-white" to="/projects">Project</Link>
+          </li>
+          <li>
+          <Link className="text-xl font-bold text-white hover:bg-blue-600 hover:text-white" to="/contact">Contact</Link>
+          </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl">Outdoor Adventure</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 ">
           <li>
-            <a>Home</a>
+          <Link className="text-xl font-bold text-white hover:bg-blue-600 hover:text-white" to="/">Home</Link>
           </li>
           <li>
-            <a>About</a>
+          <Link className="text-xl font-bold text-white hover:bg-blue-600 hover:text-white" to="/about">About</Link>
           </li>
           <li>
-            <a>Services</a>
+          <Link className="text-xl font-bold text-white hover:bg-blue-600 hover:text-white" to="/services">Services</Link>
           </li>
           <li>
-            <Link to="/projects">Project</Link>
+            <Link className="text-xl font-bold text-white hover:bg-blue-600 hover:text-white" to="/projects">Project</Link>
           </li>
           <li>
-            <a>Contact</a>
+          <Link className="text-xl font-bold text-white hover:bg-blue-600 hover:text-white" to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
