@@ -23,10 +23,10 @@ const Adventures = () => {
           pulvinar.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {adventure?.map((trip) => (
-          <div className="m-auto p-6 my-6 text-center w-full md:w-[600px] md:h-[500px]" key={trip.id}>
-            <img className="m-auto my-6 border shadow-xl" src={trip.image} alt="" />
+          <div className="m-auto p-6 my-1 text-center" key={trip.id}>
+            <img className="m-auto my-1 border shadow-xl" src={trip.image} alt="" />
             <div>
               <h3 className="">{trip.type} </h3>
               <p>{trip.description}</p>
