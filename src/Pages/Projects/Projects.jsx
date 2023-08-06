@@ -11,7 +11,7 @@ const Projects = () => {
         bgImage="/project-background.png"
         title={"Our Projects"}
       ></SectionHeader>
-      <div className="p-5 xl:p-0">
+      <div>
         <WaterSports></WaterSports>
         <WinterSports></WinterSports>
         <Camping></Camping>

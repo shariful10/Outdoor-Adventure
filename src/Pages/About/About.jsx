@@ -9,13 +9,13 @@ const About = () => {
 	return (
 		<>
 			<SectionHeader title={"WHO WE ARE?"} bgImage={bg}></SectionHeader>
-			<div className="mx-16">
+			<div className="p-5 md:p-0">
 				<Container>
-					<div className="md:flex justify-between my-24">
+					<div className="md:flex justify-between my-24 space-y-8 md:space-y-0">
 						<div>
 							<h3 className="text-3xl font-bold">OUR MISSION</h3>
 
-							<p className="bg-rose-600 w-20 h-1 my-3">&nbsp;</p>
+							<div className="h-1 w-24 bg-primary my-3"></div>
 
 							<p className="my-8">
 								Click edit button to change this text. Lorem ipsum dolor sit amet,{" "}
@@ -28,11 +28,7 @@ const About = () => {
 							</p>
 						</div>
 						<div>
-							<img
-								className="custom-shadow md:h-[400px]"
-								src={image}
-								alt=""
-							/>
+							<img className="custom-shadow md:h-[400px]" src={image} alt="" />
 						</div>
 					</div>
 					<BottomAbout></BottomAbout>

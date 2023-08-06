@@ -6,7 +6,7 @@ import { Pagination } from "swiper/modules";
 
 const Camping = () => {
 	return (
-		<div className="">
+		<div className="p-5 md:p-0 max-w-7xl mx-auto">
 			<div className="container mx-auto text-center md:text-start">
 				<div className="flex flex-col md:flex-row items-center gap-5 mt-10 mb-16 ">
 					<h5 className="text-xl font-bold">Forest Tours</h5>
@@ -30,35 +30,35 @@ const Camping = () => {
 						},
 						768: {
 							slidesPerView: 3,
-							spaceBetween: 40,
+							spaceBetween: 20,
 						},
 					}}
 					loop={true}
 					modules={[Pagination]}
-					className="mySwiper mt-20 mb-32"
+					className="mySwiper my-10"
 				>
-					<SwiperSlide>
+					<SwiperSlide className="py-10">
 						<img className="rounded-lg" src="/camping1.jpg" alt="Water Adventure" />
 					</SwiperSlide>
-					<SwiperSlide>
+					<SwiperSlide className="py-10">
 						<img className="rounded-lg" src="/camping2.jpg" alt="Water Adventure" />
 					</SwiperSlide>
-					<SwiperSlide>
+					<SwiperSlide className="py-10">
 						<img className="rounded-lg" src="/camping3.jpg" alt="Water Adventure" />
 					</SwiperSlide>
-					<SwiperSlide>
+					<SwiperSlide className="py-10">
 						<img className="rounded-lg" src="/camping4.jpg" alt="Water Adventure" />
 					</SwiperSlide>
-					<SwiperSlide>
+					<SwiperSlide className="py-10">
 						<img className="rounded-lg" src="/camping5.jpg" alt="Water Adventure" />
 					</SwiperSlide>
-					<SwiperSlide>
+					<SwiperSlide className="py-10">
 						<img className="rounded-lg" src="/camping6.jpg" alt="Water Adventure" />
 					</SwiperSlide>
-					<SwiperSlide>
+					<SwiperSlide className="py-10">
 						<img className="rounded-lg" src="/camping7.jpg" alt="Water Adventure" />
 					</SwiperSlide>
-					<SwiperSlide>
+					<SwiperSlide className="py-10">
 						<img className="rounded-lg" src="/camping8.jpg" alt="Water Adventure" />
 					</SwiperSlide>
 				</Swiper>
