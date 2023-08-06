@@ -1,6 +1,6 @@
 # Outdoor-Adventure
 
-[Outdoor Adventure](https://outdooradventure.vercel.app/)
+### Live Preview: [Outdoor Adventure](https://outdooradventure.vercel.app/)
 
 ## Description
 
