@@ -29,6 +29,10 @@ export const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path: "/services",
+        element: <Services></Services>,
+      },
     ],
   },
   {
