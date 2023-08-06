@@ -7,6 +7,7 @@ const Services = () => {
         <div>
             <ServicesBanner></ServicesBanner>
             <Adventures></Adventures>
+            <h1>Hello</h1>
         </div>
     );
 };
