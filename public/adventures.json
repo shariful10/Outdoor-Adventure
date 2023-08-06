@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "type": "Backpacking Trips",
+      "description": "Explore new destinations with lightweight and adventurous backpacking trips.",
+      "image" : "https://i.ibb.co/cFgwxxy/5.png"
+    },
+    {
+      "id": 2,
+      "type": "Cruise Vacations",
+      "description": "Experience luxury and relaxation on the open seas with our cruise vacation packages.",
+      "image" : "https://i.ibb.co/cFgwxxy/5.png"
+    },
+    {
+      "id": 3,
+      "type": "Adventure Tours",
+      "description": "Embark on thrilling adventure tours that take you off the beaten path.",
+      "image" : "https://i.ibb.co/cFgwxxy/5.png"
+    },
+    {
+      "id": 4,
+      "type": "Beach Getaways",
+      "description": "Relax and unwind on pristine beaches with our beach getaway packages.",
+      "image" : "https://i.ibb.co/cFgwxxy/5.png"
+    }
+  ]
