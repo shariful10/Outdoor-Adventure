@@ -6,12 +6,12 @@ const Adventures = () => {
     fetch("adventures.json")
       .then((res) => res.json())
       .then((data) => setAdventure(data));
-  }, []);
+  }, [adventure]);
 
   console.log(adventure);
 
   return (
-    <div className="mb-96">
+    <div className="">
       <div className="text-center my-24 border w-1/2 m-auto">
         <h2 className="uppercase text-4xl font-bold m-6">
           IT'S TIME TO START YOUR ADVENTURES
@@ -23,9 +23,9 @@ const Adventures = () => {
           pulvinar.
         </p>
       </div>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         {adventure?.map((trip) => (
-          <div className="m-auto p-6 my-6 border text-center w-[600px] h-[500px]" key={trip.id}>
+          <div className="m-auto p-6 my-6 text-center w-full md:w-[600px] md:h-[500px]" key={trip.id}>
             <img className="m-auto my-6 border shadow-xl" src={trip.image} alt="" />
             <div>
               <h3 className="">{trip.type} </h3>

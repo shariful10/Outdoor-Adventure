@@ -2,44 +2,68 @@ import React from "react";
 
 const WhyUs = () => {
   return (
-    <div>
-      <div className="grid grid-cols-2 m-auto border">
-        <div className="m-6 p-3 border">
-          <div>
-            <h3 className="text-3xl font-bold">Why Outdoor Venture?</h3>
-            <div className="text-5xl">
-              <hr />
-            </div>
-            <p className="my-8">
-              Click edit button to change this text. Lorem ipsum dolor sit amet,{" "}
-              <br /> adipiscing elit.
-            </p>
-            <ul>
-              <li><hr/>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-              <li>
-                Consequatur, ipsa eaque. Labore vero in excepturi saepe
-                temporibus.
-              </li>
-              <li>Nulla, ratione reprehenderit excepturi tenetur,</li>
-            </ul>
+    <div className="p-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 m-auto">
+        <div className="m-auto p-3 h-full w-full">
+          <h3 className="text-3xl font-bold">Why Outdoor Venture?</h3>
+          <div className="flex my-2">
+            <div className="m-auto h-1 bg-red-500 w-1/12"></div>
+            <div className="w-11/12"></div>
           </div>
+          <p className="my-8">
+            Click edit button to change this text. Lorem ipsum dolor sit amet,W adipiscing elit.
+          </p>
+          <ul>
+            <li className="flex">
+              <div className="m-auto h-1 bg-red-500 w-1/12"></div>
+              <div className="w-5/6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </li>
+            <li className="flex">
+              <div className="m-auto h-1 bg-red-500 w-1/12"></div>
+              <div className="w-5/6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </li>
+            <li className="flex">
+              <div className="m-auto h-1 bg-red-500 w-1/12"></div>
+              <div className="w-5/6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </li>
+          </ul>
         </div>
-        <div className="flex justify-between m-6 p-3 border">
-          <div>
-            <h3 className="text-3xl font-bold">What You Get?</h3>
-            <div className="text-5xl">
-              <hr />
-            </div>
-            <p className="my-8">
-              Click edit button to change this text. Lorem ipsum dolor sit amet,{" "}
-              <br /> adipiscing elit.
-            </p>
-            <p>
-              Click edit button to change this text. Lorem ipsum dolor sit amet,{" "}
-              <br /> consectetur adipiscing elit. Ut elit tellus, luctus nec
-              ullamcorper mattis, <br /> pulvinar dapibus leo.
-            </p>
+        <div className="m-auto p-3 h-full w-full">
+          <h3 className="text-3xl font-bold">Why Outdoor Venture?</h3>
+          <div className="flex my-2">
+            <div className="m-auto h-1 bg-red-500 w-1/12"></div>
+            <div className="w-11/12"></div>
           </div>
+          <p className="my-8">
+            Click edit button to change this text. Lorem ipsum dolor sit amet,{" "}
+            <br /> adipiscing elit.
+          </p>
+          <ul>
+            <li className="flex">
+              <div className="m-auto h-1 bg-red-500 w-1/12"></div>
+              <div className="w-5/6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </li>
+            <li className="flex">
+              <div className="m-auto h-1 bg-red-500 w-1/12"></div>
+              <div className="w-5/6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </li>
+            <li className="flex">
+              <div className="m-auto h-1 bg-red-500 w-1/12"></div>
+              <div className="w-5/6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
