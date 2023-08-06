@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Montserrat:wght@700&family=Noto+Sans&display=swap");
+
+.custom-shadow {
+  box-shadow: 15px 15px 0px 0px #ededed;
+  border-radius: 5px;
+}
+
+.primary_button {
+  background-color: #fb2056;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  outline: 3px solid rgba(255, 255, 255, 0);
+}
+
+.primary_button:hover {
+  outline: 3px solid #fb2056;
+  outline-offset: -8px;
+  background-color: transparent;
+  color: #fb2056;
+}
