@@ -3,7 +3,7 @@ import React from "react";
 const SectionHeader = ({ bgImage, subTitle, title }) => {
   return (
     <section
-      className="relative h-[60vh] bg-cover bg-center text-white"
+      className="relative h-[40vh] md:h-[60vh] bg-cover bg-center text-white"
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
@@ -12,7 +12,7 @@ const SectionHeader = ({ bgImage, subTitle, title }) => {
         <h1 className="font-bold mb-4 font-Montserrat text-2xl my-5">
           {subTitle}
         </h1>
-        <p className="text-5xl md:text-[64px] font-bold font-Montserrat uppercase">
+        <p className="text-3xl md:text-[64px] font-bold font-Montserrat uppercase">
           {title}
         </p>
       </div>

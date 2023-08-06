@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  // const [isSignIn, setIsSignIn] = useState(location.pathname === "/login");
+  const isSignIn = location.pathname === "/login";
+  const isSignUp = location.pathname === "/signup";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,15 +25,20 @@ const Navbar = () => {
     };
   }, []);
 
+  // Update the isSignIn state when the location changes
+  // useEffect(() => {
+  //   setIsSignIn(location.pathname === "/login");
+  // }, [location.pathname]);
+
   return (
     <div
-      className={`fixed top-0 w-full z-20  ${
-        scrolling
-          ? "bg-white z-10 border-b"
-          : "bg-transparent text-white border-b-0"
-      } duration-300`}
+      className={`fixed top-0 w-full z-20 py-2  ${
+        scrolling || isSignIn || isSignUp
+          ? "bg-white z-10 shadow-sm"
+          : "bg-transparent text-white"
+      } duration-500`}
     >
-      <div className="navbar max-w-7xl mx-auto">
+      <div className="navbar max-w-7xl mx-auto p-3 md:p-5 2xl:p-0">
         <div className="navbar-start">
           <div className="dropdown">
             <label
@@ -55,7 +64,7 @@ const Navbar = () => {
             <div
               className={`${
                 open
-                  ? "top-10 left-5 lg:hidden text-black"
+                  ? "top-12 -left-2 lg:hidden text-black"
                   : "top-10 -left-[500px] lg:hidden"
               } bg-white rounded px-8 py-10 shadow-2xl border text-lg absolute z-10 transition-all duration-500`}
             >
@@ -96,16 +105,16 @@ const Navbar = () => {
                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-700 h-1 bg-primary mt-[1px]"></span>
                   </Link>
                 </li>
-                <li>
-                  <Link className="text-lg font-NotoSans  group " to="/signup">
-                    Sign Up
-                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-700 h-1 bg-primary mt-[1px]"></span>
-                  </Link>
-                </li>
               </ul>
             </div>
           </div>
-          <Link className={`hidden md:block ${scrolling && "filter invert"}`}>
+          <Link
+            className={`hidden md:block ${
+              scrolling || isSignIn || isSignUp
+                ? "filter invert"
+                : "filter-none invert-0"
+            }`}
+          >
             <img
               className="w-40"
               src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2020/01/white-logo.png"
@@ -145,19 +154,13 @@ const Navbar = () => {
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-700 h-1 bg-primary   mt-[1px]"></span>
               </Link>
             </li>
-            <li>
-              <Link className="text-lg font-NotoSans  group " to="/signup">
-                Sign Up
-                <span className="block max-w-0 group-hover:max-w-full transition-all duration-700 h-1 bg-primary   mt-[1px]"></span>
-              </Link>
-            </li>
           </ul>
         </div>
         <div className="navbar-end">
           <Link
             to="/login"
-            className={`bg-primary px-10 py-3 rounded-full font-semibold font-NotoSans primary_button ${
-              scrolling && "text-white"
+            className={`bg-primary px-10 py-2 md:py-3 rounded-full font-medium md:font-semibold font-NotoSans primary_button ${
+              scrolling || isSignIn || isSignUp ? "text-white" : "text-white"
             }`}
           >
             Login
