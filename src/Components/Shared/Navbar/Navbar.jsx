@@ -55,7 +55,7 @@ const Navbar = () => {
             <div
               className={`${
                 open
-                  ? "top-10 left-5 lg:hidden text-black"
+                  ? "top-12 -left-2 lg:hidden text-black"
                   : "top-10 -left-[500px] lg:hidden"
               } bg-white rounded px-8 py-10 shadow-2xl border text-lg absolute z-10 transition-all duration-500`}
             >
