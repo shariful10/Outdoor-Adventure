@@ -7,7 +7,6 @@ import Login from "../Pages/Login/Login";
 import About from "../Pages/About/About";
 import SignUp from "../Pages/SignUp/SignUp";
 import Contact from "./../Pages/Contact/Contact";
-import Services from "../Pages/Services/Services";
 
 export const router = createBrowserRouter([
   {
