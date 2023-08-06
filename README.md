@@ -1,6 +1,6 @@
 # Outdoor-Adventure
 
-![Outdoor-Adventure](https://outdooradventure.vercel.app/)
+[Outdoor Adventure](https://outdooradventure.vercel.app/)
 
 ## Description
 
