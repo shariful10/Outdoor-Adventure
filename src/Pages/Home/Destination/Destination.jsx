@@ -6,11 +6,11 @@ const Destination = () => {
     <section className="my-16">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 items-center gap-4">
-          <div className="max-w-[450px] p-5">
+          <div className="w-full md:max-w-[450px] p-5 mx-auto text-center">
             <h1 className="text-2xl lg:text-4xl font-Montserrat font-bold">
               UPCOMING TOURS & DESTINATION
             </h1>
-            <div className="h-1 w-16 bg-primary my-4"></div>
+            <div className="h-1 w-16 bg-primary my-4 mx-auto"></div>
             <p className="font-NotoSans text-neutral-500">
               Fuerat aestu carentem habentia spectent tonitrua mutastis locavit
               liberioris. Sinistra possedit litora ut nabataeaque. Setucant
@@ -21,7 +21,7 @@ const Destination = () => {
               Learn More
             </button>
           </div>
-          <div className="max-w-[450px] space-y-4">
+          <div className="w-full md:max-w-[450px] space-y-4 mx-auto">
             <img
               className="rounded-md w-full"
               src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2021/02/outdoor-image-01.jpg"
@@ -33,7 +33,7 @@ const Destination = () => {
               alt=""
             />
           </div>
-          <div className="max-w-[450px] space-y-4">
+          <div className="w-full md:max-w-[450px] space-y-4 mx-auto">
             <img
               className="rounded-md w-full"
               src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/snow-1.jpg"
