@@ -62,7 +62,7 @@ const SignUp = () => {
 				console.log(err.message);
 				toast.error(err.message);
 			});
-		fetch("http://localhost:5000/user", {
+		fetch(`${import.meta.env.VITE_IMGBB_API}/user`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

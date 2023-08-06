@@ -20,6 +20,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div
       className={`fixed top-0 w-full z-20  ${
@@ -95,6 +96,12 @@ const Navbar = () => {
                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-700 h-1 bg-primary mt-[1px]"></span>
                   </Link>
                 </li>
+                <li>
+                  <Link className="text-lg font-NotoSans  group " to="/signup">
+                    Sign Up
+                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-700 h-1 bg-primary mt-[1px]"></span>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -135,6 +142,12 @@ const Navbar = () => {
             <li>
               <Link className="text-lg font-NotoSans  group " to="/contact">
                 Contact
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-700 h-1 bg-primary   mt-[1px]"></span>
+              </Link>
+            </li>
+            <li>
+              <Link className="text-lg font-NotoSans  group " to="/signup">
+                Sign Up
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-700 h-1 bg-primary   mt-[1px]"></span>
               </Link>
             </li>
