@@ -6,7 +6,7 @@ const Destination = () => {
     <section className="my-16">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 items-center gap-4">
-          <div className="w-full md:max-w-[450px] p-5 mx-auto text-center">
+          <div className="w-full md:max-w-[450px] p-5 mx-auto text-center md:text-left">
             <h1 className="text-2xl lg:text-4xl font-Montserrat font-bold">
               UPCOMING TOURS & DESTINATION
             </h1>

@@ -29,7 +29,7 @@ const Navbar = () => {
           : "bg-transparent text-white border-b-0"
       } duration-300`}
     >
-      <div className="navbar max-w-7xl mx-auto">
+      <div className="navbar max-w-7xl mx-auto p-3 md:p-5 2xl:p-0">
         <div className="navbar-start">
           <div className="dropdown">
             <label
@@ -156,7 +156,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <Link
             to="/login"
-            className={`bg-primary px-10 py-3 rounded-full font-semibold font-NotoSans primary_button ${
+            className={`bg-primary px-10 py-2 md:py-3 rounded-full font-medium md:font-semibold font-NotoSans primary_button ${
               scrolling && "text-white"
             }`}
           >
